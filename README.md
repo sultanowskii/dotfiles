@@ -1,2 +1,3 @@
-# neovim-config
+# configs 
 Just not to lose it
+
