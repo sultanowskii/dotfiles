@@ -6,7 +6,7 @@ My current setup
 - i3-gaps
 - i3status
 - Neovim
-- Astronvim
+  - Astronvim
 - kitty
 - picom
 - xprop
