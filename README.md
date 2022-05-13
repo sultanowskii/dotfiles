@@ -1,5 +1,5 @@
-# configs 
-My current setup.
+# configs
+My current setup
 
 ## Requirements
 - feh
