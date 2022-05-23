@@ -14,7 +14,7 @@ My current setup
   - oh-my-zsh
   - zsh-autosuggestions
   - zsh-syntax-highlighting
-  - powerlevel10k
+  - bubblififed
 
 ## Installation
 ```bash
