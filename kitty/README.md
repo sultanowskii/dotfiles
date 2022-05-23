@@ -1,4 +1,4 @@
 # Kitty
 
 ## Requirements
-- kitty
+- [kitty](https://github.com/kovidgoyal/kitty)

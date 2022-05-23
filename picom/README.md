@@ -1,5 +1,5 @@
 # Picom
 
 ## Requirements
-- picom
-- kitty (don't forget to check correpsonding [folder](/kitty/README.md))
+- [picom](https://github.com/yshui/picom)
+- [kitty](/kitty/README.md)
