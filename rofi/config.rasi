@@ -1,0 +1,14 @@
+configuration {
+  modi: [ run, drun, ssh, filebrowser, combi ];
+  combi-modi: [ run, drun, ssh, filebrowser ];
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "squared-nord"
