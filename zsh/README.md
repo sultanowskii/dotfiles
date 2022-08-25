@@ -6,3 +6,7 @@
     - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
     - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
     - [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+## Installation
+1. Install requirements
+2. Run `./install.sh`

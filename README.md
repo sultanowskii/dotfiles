@@ -9,6 +9,8 @@ My current setup
   - [Astronvim](https://github.com/AstroNvim/AstroNvim)
 - [kitty](https://github.com/kovidgoyal/kitty)
 - [picom](https://github.com/yshui/picom)
+- [polybar](https://github.com/polybar/polybar)
+  - [polybar-themes](https://github.com/adi1090x/polybar-themes)
 - [rofi](https://github.com/davatorium/rofi)
 - xprop
 - [zsh](https://github.com/zsh-users/zsh)
@@ -32,5 +34,10 @@ chmod +x install.sh */install.sh
 1. Install all the requirements
 2. Download this repository
 3. Get inside
-3. Mark all the scripts as executable
-4. Run **install.sh**
+4. Mark all the scripts as executable
+5. Run **install.sh**
+6. Install optional fancy thingies by following `Optional` sections in `README`s.
+
+
+## P.S.
+yup there are plenty of dotfiles generators, but meh don't wanna use them.

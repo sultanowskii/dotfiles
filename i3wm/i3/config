@@ -46,34 +46,22 @@ set $refresh_i3status killall -SIGUSR1 i3status
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# start a terminal (custom)
 bindsym $mod+Return exec /usr/bin/kitty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start rofi (a program launcher)
+# start rofi (a program launcher, custom)
 bindsym $mod+d exec --no-startup-id rofi -show combi -show-icons
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# alternatively, you can use the cursor keys:
+# focusing on windows
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+colon move right
-
-# alternatively, you can use the cursor keys:
+# moving windows
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -101,6 +89,9 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# lock screen using i3lock-solarized (custom)
+bindsym $mod+l exec /usr/bin/i3lock-solarized-dark
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -182,13 +173,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3status
-# (custom)
-        font pango:DejaVu Sans Mono 8 
-}
+# polybar (custom)
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh --forest
 
 # Plasma compatibility improvements (custom)
 for_window [window_role="pop-up"] floating enable
@@ -210,9 +196,8 @@ no_focus [class="plasmashell" window_type="notification"]
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
 # End of Plasma compatibility improvements
 
-# yay it works (ubuntu 20.04, KDE) - https://askubuntu.com/questions/1161567/lenovo-fn-shortcuts-on-i3 (custom)
+# yay it works (ubuntu 20.04+KDE, manjaro+KDE) - https://askubuntu.com/questions/1161567/lenovo-fn-shortcuts-on-i3 (custom)
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%  # increase volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% # decrease volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle  # mute sound
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle  # mute mic
-
