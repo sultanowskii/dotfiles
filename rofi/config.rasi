@@ -1,6 +1,6 @@
 configuration {
-  modi: [ run, drun, ssh, filebrowser, combi ];
-  combi-modi: [ run, drun, ssh, filebrowser ];
+  modi: [ drun, run, ssh, filebrowser, combi ];
+  combi-modi: [ drun, run, ssh, filebrowser ];
   timeout {
       action: "kb-cancel";
       delay:  0;

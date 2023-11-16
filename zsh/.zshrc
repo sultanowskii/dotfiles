@@ -86,8 +86,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
-
 # python packages
 export PATH="$PATH:$HOME/.local/bin"
 
@@ -95,11 +93,36 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/local/go/bin"
 
 # go packages
-export GOROOT="" # this dumbass has to be stopped, so don't change.
+export GOROOT="" # don't change this one
 export PATH="$PATH:$GOROOT/bin"
+export PATH="$PATH:/home/sultanowskii/go/bin"
 
+# poetry
+export PATH="$PATH:$HOME/.poetry/bin"
+
+# IDA
 alias ida="wine /home/sultanowskii/Programs/IDA\ Pro\ 7.6/ida.exe"
 alias ida64="wine /home/sultanowskii/Programs/IDA\ Pro\ 7.6/ida64.exe"
+
+# ghidra
+alias ghidra="/home/sultanowskii/Programs/ghidra_10.2.3_PUBLIC/ghidraRun"
+
+# hydrus
+alias hydrus_server="/home/sultanowskii/Programs/hydrus/server"
+alias hydrus_client="/home/sultanowskii/Programs/hydrus/client"
+
+# without it Kitty visually fucks up ssh session
+export TERM=xterm-256color
+
+# vpn shortcut
+alias vpn_sltnwsk="sudo systemctl start wg-quick@wg0"
+alias vpn_sltnwsk_disable="sudo systemctl stop wg-quick@wg0"
+
+# java home
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
+
+# default editor
+export EDITOR="/usr/bin/nvim"
 
 # applies pywal color scheme for all new terminals
 #(cat ~/.cache/wal/sequences &)
