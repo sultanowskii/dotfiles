@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 mkdir -p ~/.config/kitty/
-cp colors.conf kitty.conf ~/.config/kitty/
+ln -sf "`pwd`/colors.conf" kitty.conf ~/.config/kitty/colors.conf
